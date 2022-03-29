@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/character_item"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:elevation="16dp"
+    android:background="@null"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/character_image"
+        android:layout_width="170dp"
+        android:layout_height="225dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_width="0dp"
+        android:ellipsize="none"
+        android:scrollHorizontally="false"
+        android:text="TextView"
+        android:textColor="@color/textColor"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/character_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/birthdayTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text="TextView"-->
+<!--        android:textColor="@color/textColor"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/nameTextView"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/nameTextView" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/statusTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="TextView"-->
+<!--        android:textColor="@color/textColor"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/birthdayTextView"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/birthdayTextView" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

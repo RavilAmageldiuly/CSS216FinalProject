@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/character_detail_activity"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/backgroundColor"
+    tools:context=".CharacterDetailActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007"
+        app:srcCompat="?attr/homeAsUpIndicator"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/characterImageView"
+        android:layout_width="292dp"
+        android:layout_height="331dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.157"
+        app:srcCompat="@drawable/image" />
+
+    <TextView
+        android:id="@+id/characterNameTextView"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Name: "
+        android:layout_width="0dp"
+        android:ellipsize="none"
+        android:scrollHorizontally="false"
+        android:textColor="@color/textColor"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/characterImageView" />
+
+    <TextView
+        android:id="@+id/characterBirthdayTextView"
+        android:layout_width="0dp"
+        android:ellipsize="none"
+        android:scrollHorizontally="false"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Birthday: "
+        android:textColor="@color/textColor"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="@+id/characterNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/characterNameTextView" />
+
+    <TextView
+        android:id="@+id/characterOccupationTextView"
+        android:layout_width="0dp"
+        android:ellipsize="none"
+        android:scrollHorizontally="false"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Occupation: "
+        android:textColor="@color/textColor"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/characterBirthdayTextView"
+        app:layout_constraintTop_toBottomOf="@+id/characterBirthdayTextView" />
+
+    <TextView
+        android:id="@+id/characterStatusTextView"
+        android:layout_width="0dp"
+        android:ellipsize="none"
+        android:scrollHorizontally="false"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Status: "
+        android:textColor="@color/textColor"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="@+id/characterOccupationTextView"
+        app:layout_constraintTop_toBottomOf="@+id/characterOccupationTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
